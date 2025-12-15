@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Why Social Roles Exist</title>
+    <style>
+        body {
+            font-family: "Georgia", serif;
+            background: #fdfcf7;
+            /* parchment tone */
+            color: #000000;
+            /* normal text is black */
+            line-height: 1.7;
+            margin: 0;
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: #5a2a27;
+            /* deep burgundy */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 14px 40px;
+            z-index: 1000;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        nav .logo {
+            color: #fdfcf7;
+            font-weight: 700;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav a {
+            color: #fdfcf7;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        nav a:hover {
+            color: #d4af37;
+        }
+
+        /* Hero */
+        .hero {
+            height: 60vh;
+            background: linear-gradient(135deg, #5a2a27, #7c3f2c);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #fdfcf7;
+            padding: 20px;
+        }
+
+        .hero h1 {
+            font-size: 2.8rem;
+            margin-bottom: 20px;
+        }
+
+        /* Byline + Quote */
+        .byline-quote {
+            max-width: 900px;
+            margin: 40px auto;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        .byline {
+            font-size: 1.1rem;
+            color: #000000;
+            margin-bottom: 16px;
+        }
+
+        .quote-box {
+            background: #fff8e7;
+            border: 2px solid #d4af37;
+            border-radius: 12px;
+            padding: 20px;
+            margin: 40px auto;
+            max-width: 800px;
+            font-style: italic;
+            font-size: 1.2rem;
+            text-align: center;
+            color: #5a2a27;
+        }
+
+        /* Sections */
+        section {
+            padding: 80px 20px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .card {
+            background: #ffffff;
+            border-radius: 12px;
+            padding: 30px;
+            margin-bottom: 40px;
+            border: 1px solid #e0d7c6;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            color: #000000;
+        }
+
+        section h2 {
+            color: #7c3f2c;
+            margin-bottom: 12px;
+            font-size: 1.8rem;
+            text-align: center;
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+            margin-top: 16px;
+            border: 3px solid #d4af37;
+            transition: transform 0.3s, border-color 0.3s;
+        }
+
+        .card img:hover {
+            transform: scale(1.03);
+            border-color: #5a2a27;
+        }
+
+        /* Works Cited */
+        .works-list {
+            list-style: none;
+            padding-left: 0;
+            margin-top: 20px;
+        }
+
+        .works-list li {
+            background: #fdfcf7;
+            border-left: 4px solid #7c3f2c;
+            padding: 12px 16px;
+            margin-bottom: 12px;
+            border-radius: 8px;
+            color: #000000;
+        }
+
+        .works-list li:hover {
+            background: #fff2d6;
+        }
+
+        /* Circles */
+        .circles {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .circle {
+            width: 100px;
+            height: 100px;
+            border: 4px solid #7c3f2c;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            color: #7c3f2c;
+            background: #fff8e7;
+            transition: transform 0.3s, border-color 0.3s;
+        }
+
+        .circle:hover {
+            transform: scale(1.1);
+            border-color: #d4af37;
+            color: #d4af37;
+        }
+
+       
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #5a2a27;
+            color: #fdfcf7;
+        }
+    </style>
+</head>
+
+<body>
+  
+    <nav>
+        <div class="logo">Essay Outline</div>
+        <ul>
+            <li><a href="#intro">Intro</a></li>
+            <li><a href="#audience">Target Audience</a></li>
+            <li><a href="#tan">Amy Tan</a></li>
+            <li><a href="#staples">Brent Staples</a></li>
+            <li><a href="#anzaldua">Gloria Anzaldúa</a></li>
+            <li><a href="#conclusion">Conclusion</a></li>
+            <li><a href="#works-cited">Works Cited</a></li>
+        </ul>
+    </nav>
+
+   
+    <div class="hero">
+        <h1>Why Social Roles Exist & Why We Can’t “Just Be Ourselves”</h1>
+        <p>Gabriel Agyeman-Dua • Composition I • Mr. Tierney • 7 December 2025</p>
+    </div>
+
+    
+    <section class="byline-quote">
+        <p class="byline">By: <strong>Gabriel Agyeman-Dua</strong></p>
+        <div class="quote-box">
+            <p>“Being yourself isn’t possible if society has already decided who you’re supposed to be.”</p>
+        </div>
+    </section>
+
+  
+    <section id="audience">
+        <div class="card">
+            <h2>Target Audience Statement</h2>
+            <p>
+            My target audience is young adults between the ages of sixteen to twenty-two who believe identity is something they have
+            full control over. This age range tends to repeat the phrase “just be yourself;” however, they don’t tend to acknowledge
+            how difficult it is in reality. I chose this audience because people in this age group are beginning to form their
+            identities while confronting new social pressures in work, school, etc. My overall message is that identity is not
+            simply a personal choice, but something shaped by stereotypes & expectations outside one’s control. To persuade my
+            intended audience, I used a relatable tone that reflects their experiences, while maintaining credibility through my
+            analysis, evidence, and structure. The goal of my text is to assist my audience in understanding that authenticity is
+            complicated, not because individuals are at fault, but because society restricts who you're allowed to be.
+            </p>
+        </div>
+    </section>
+
+ 
+    <section id="intro">
+        <div class="card">
+            <h2>Introduction</h2>
+            <p>When we grow up, we tend to hear the phrase that sounds individualistic: “just be yourself”. It’s repeated so often that
+            it’s somewhat embedded into our social script, an instruction for authenticity that presumes identity is created from
+            within. But as we begin to live longer, we confront this script with our own contracting experiences. People are shaped
+            by the expectations placed on them & treated differently based on the categories people assume they belong in, and we’re
+            pressured to behave in ways that fit our defined roles. If society truly wanted us to “be ourselves,” then why are there
+            so many structures, judgments, & expectations placed on us that push us towards the roles that limit us? To develop an
+            understanding of why people can’t simply exist outside of these roles, we can look at how three authors: Amy Tan, Brent
+            Staples, & Gloria Anzaldúa describe these invisible forces that shape our identity. From these three authors, I’ll use
+            their personal experiences to reveal that societal roles exist because they create order for those in power & make
+            people easier to categorize(stereotyping). These roles can offer a rapport; however, more often than not, they restrict
+            our individuality. Together, these stories will make this message clear: being yourself isn’t possible if society has
+            already decided who you're supposed to be.</p>
+            <img src="images/intro.jpg" alt="Introduction illustration" />
+        </div>
+    </section>
+
+    <section id="tan">
+        <div class="card">
+            <h2>Amy Tan — Mother Tongue</h2>
+            <p>Societal roles exist because they assist society in stereotyping individuals into specific categories; these categories
+            aren’t neutral, either, they’re built on assumptions due to an individual's race, language, gender, and culture. In Amy
+            Tan’s ‘’Mother Tongue,’’ we see that language can put people into roles before they can even break out of it. Tan
+            elaborates on this, explaining how people treated her mother differently due to her incompetence when speaking
+            English(‘’broken English’’); however, Tan was treated more seriously when she spoke on behalf of her mother. Society
+            didn’t bother listening to her mother due to the role they presumptuously assigned to her, due to her limited English,
+            the role of “limited English speaker” carries stereotypes of incompetence or a lack of intellectual capabilities. These
+            roles don’t randomly emerge; they are formed because society prioritizes one dominant way of speaking and silences the
+            others. In other words, these roles exist to maintain linguistic hierarchy and social order.</p>
+            <img src="images/tan.jpg" alt="Amy Tan illustration" />
+        </div>
+    </section>
+
+    <section id="staples">
+        <div class="card">
+            <h2>Brent Staples — Black Men in Public Spaces</h2>
+            <p>Similarly, in Brent Staples’ ‘’Black Men in Public Spaces,’’ stereotypes begin to arise due to deep-rooted fears and
+            racism. Staples describes how strangers treated him and assigned him the role of a dangerous Black man. Even though
+            Staples described himself as a softy for simply walking through public spaces, he was assumed to be a dangerous
+            individual. Staples’ notes how a woman once “They seem to set their faces on neutral and, with their purse straps strung
+            across their chests bandolier style, they forge ahead as though bracing themselves against being tackled.”(Page 1,
+            Paragraph 6) This woman didn’t even know Staples at all; however, due to Black men being historically viewed as vicious
+            individuals capable of horrific acts of violence, she braced herself for what she assumed could happen rather than
+            dropping her stereotypical beliefs, and this overpowers Staples' actual identity. This role exists due to society
+            historically assigning the label of violent individuals capable of vicious acts to Black men, forming public perception.</p>
+            <img src="images/staples.jpg" alt="Brent Staples illustration" />
+        </div>
+    </section>
+
+    <section id="anzaldua">
+        <div class="card">
+            <h2>Gloria Anzaldúa — Culture & Identity</h2>
+            <p>In Gloria Azaldúa’s “How to Tame a Wild Tongue,” roles come from cultural and institutional pressure. Azaldúa elucidates
+            on how Chicana women face the expectation of being able to speak “proper” English & behave acceptably, and suppress
+            their culture to appear professional. Azaldúa writes that she was disciplined in school for speaking Spanish, and her
+            accent was “incorrect.” This shows how institutions created and reinforced role assimilation. The role of a professional
+            American student is to erase differences, and not to celebrate them. Institutions defend these roles because they
+            reinforce the dominant culture and keep people under control.</p>
+            <img src="images/anzaldua.jpg" alt="Gloria Anzaldúa illustration" />
+        </div>
+    </section>
+
+    <section id="conclusion">
+        <div class="card">
+            <h2>Conclusion</h2>
+            <p>Together, Tan, Azaldúa, and Staples' stories explain how socially defined roles don’t appear naturally. They exist
+            because they benefit dominant groups, simplify social interactions, and maintain long-standing systems of power.
+            
+            Although social roles may often restrict people's individuality, they can sometimes offer identity or belonging. Tan
+            acknowledges that speaking multiple versions of English provided her access to different communities. Tan wrote that her
+            husband's English felt intimate. “It has become our language of intimacy, a different sort of English that relates to
+            family talk”(Page 1, Paragraph 4), suggesting that a linguistic role created an intimate environment rather than
+            distance. For Tan, moving between roles assisted her in understanding her spouse better and eventually empowered her to
+            become a writer. This provides evidence that not all social roles are, in fact, harmful.
+            
+            Azaldúa also recognizes the value of shared cultural identity. Azaldúa goes on to explain how Chicano Spanish helped her
+            connect to her family & history. Even though society attempted to shame her for speaking it, her linguistic role as a
+            Chicana woman allowed her to preserve her culture. The good in this role comes from connectedness with her family,
+            knowing that she isn’t alone in her struggle.
+            
+            In Staples’ case, the positive side of roles is rather complicated. Staples mentions how he started whistling popular
+            melodies from Beethoven & Vivaldi during his leisurely night walks so that people felt less threatened by him(Staples).
+            While this adaptation stems from unfair stereotypes, it assists Staples in navigating the world with an increased amount
+            of security. In a twisted way, understanding the role others placed upon him helped him in avoiding dangerous
+            misunderstandings. The benefit is survival, not acceptance.
+            
+            So while social roles may provide some benefit to identity & community, they’re rarely humanly designed. The “good” they
+            offer tends to be accidental, while the harm they cause is more deliberate.
+            
+            Society claims to value individualism, but real life contradicts this idea. People can’t simply “just be themselves”
+            because society judges them through expectations, and these expectations limit how we conduct ourselves, speak, and even
+            how we operate in public spaces.
+            
+            In Tan’s experience, “being herself” meant speaking multiple English variations, but society punished her and her mother
+            for it. Tan writes that she had to switch between “perfect English” in professional settings because her authentic voice
+            wasn’t valued in those spaces. Tan’s authentic self wasn’t respected, only the version of herself that fit with
+            society's standards.
+            
+            For Staples, being himself an educated & thoughtful man didn’t matter much. Society still viewed him as a dangerous
+            Black man. His identity contradicted stereotypes that he never agreed to. Even though Staples did nothing wrong, he had
+            to constantly adapt to situations to avoid conflict. Being himself wasn’t an option; safety forced him to perform a role
+            that calmed other people's fears.
+            
+            For Azaldúa, “just being herself” meant embracing her mixed language and culture; however, schools, workplaces, and her
+            community pressured her into changing. Azaldúa wrote, “Wild tongues can't be tamed, they can only be cut out,”(Page 2,
+            Paragraph 2), meaning that society demanded assimilation and disciplined those who resisted. Authenticity becomes a
+            rebellion, not a natural state.
+            
+            All three authors show that identity isn’t a personal choice; it’s shaped and restricted by structures that existed
+            before we’re even born.
+            
+            Beyond individual stories, academic research also shows that socially defined roles operate as invisible rules that
+            guide behavior. In the scholarly article “Organizational Citizenship Behavior: What’s Gender Got to Do With It?”
+            Waismel-Manor and colleagues explain that society encourages people to conform to expectations based on their gender,
+            culture, & perceived identity, even when those expectations may limit who you are as a person. They argue that people
+            are often rewarded for conducting themselves in a way that aligns with stereotypes and are penalized when they violate
+            them, which mirrors the experiences of Tan, Staples, & Azaldúa (Waismel-Manor et al.). This research is supportive of
+            the idea that social roles don’t simply appear; they’re enforced through institutions, workplaces, and day-to-day
+            interactions, making it difficult for individuals to freely express themselves authentically.
+            
+            Socially defined roles exist because society depends on them to keep the population in order and simplify human
+            complexity. These roles can sometimes create a connected, flourishing community or protect people from
+            misunderstandings, but they often have limitations when it comes to individuality and silence the parts of our identity
+            that don’t conform to these expectations. Tan reveals how language determines whose words are deemed valuable and get
+            listened to. Staples reveals how race dictates people's perception and treatment of you. Anzaldúa exposes how cultural
+            and institutional pressure strips people of their own authentic selves. Even the research shows that these expectations
+            aren’t random; systems reward following stereotypes and punish them when they step outside of the roles that society
+            assigns, which makes genuine self-expression even more difficult. Together, they prove that telling someone to “just be
+            yourself” ignores the realities of identity in a world where roles are reinforced through institutions, power, and
+            predetermined stereotypes from history. Authenticity is not a simple act; it’s a negotiation with forces larger than us.
+            Understanding these forces is the first step towards challenging them, and toward creating a world where being authentic
+            is actually possible.</p>
+            <img src="images/conclusion.jpg" alt="Conclusion illustration" />
+        </div>
+    </section>
+
+    
+    <section id="works-cited">
+        <div class="card">
+            <h2>Works Cited</h2>
+            <ul class="works-list">
+               
+                <li>Waismel-Manor, Rina, et al. “Organizational Citizenship Behavior: What’s Gender Got to Do With It?” Academy of
+                Management Review, vol. 30, no. 4, 2005, pp. 770–782.</li>
+                <li>Anzaldúa, Gloria. “How to Tame a Wild Tongue.” Borderlands/La Frontera: The New Mestiza, Aunt Lute Books, 1987.</li>
+                <li>Staples, Brent. “Just Walk on By: Black Men and Public Space.”</li>
+                <li>Ms., 1986. , Amy. “Mother Tongue.” The Threepenny Review, no. 43, 1990, pp. 7–8.</li>
+               
+            </ul>
+    
+           
+            <div class="circles">
+                <div class="circle">Tan</div>
+                <div class="circle">Staples</div>
+                <div class="circle">Anzaldúa</div>
+            </div>
+        </div>
+    </section>
+    
+   
+    <footer>
+        © 2025 Gabriel Agyeman-Dua
+    </footer>
+    </body>
+    
+    </html>
